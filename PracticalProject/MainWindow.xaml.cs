@@ -27,10 +27,10 @@ namespace PracticalProject
             InitializeComponent();
             MainFrame.Content = new AddPage();
             DateTime dateTime = DateTime.Now;
-            User.users.Add(new User("igor", "igorev", dateTime, "igor", "321", "Jury"));
-            User.users.Add(new User("Egor", "igorev", dateTime, "Egor", "312", "Moderator"));
-            User.users.Add(new User("Vanya", "igorev", dateTime, "Vanya", "132", "User"));
-            User.users.Add(new User("Lena", "igorev", dateTime, "Lena", "123", "Org"));
+            User.users.Add(new User("igor", "igorev", dateTime, "Jury", "jury", "Jury"));
+            User.users.Add(new User("Egor", "igorev", dateTime, "Moderator", "moderator", "Moderator"));
+            User.users.Add(new User("Vanya", "igorev", dateTime, "User", "user", "User"));
+            User.users.Add(new User("Lena", "igorev", dateTime, "Org", "org", "Org"));
 
             new Event("A", "Games", User.users[0], User.users[3]);
             Event.Events[0].AddUserToEvent(User.users[2]);
