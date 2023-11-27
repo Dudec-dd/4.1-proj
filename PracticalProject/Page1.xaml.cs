@@ -30,9 +30,9 @@ namespace PracticalProject
         //NavigationService.Navigate(new UserPage());
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(user.IsUserInDB(LoginTBox.Text, PasswordTBox.Text))
-                User.CurrentUser = user.FindUser(LoginTBox.Text, PasswordTBox.Text);
-            switch (user.GetUserRole(LoginTBox.Text, PasswordTBox.Text))
+            if(user.IsUserInDB(LoginTBox.Text, PasswordTBox.Password))
+                User.CurrentUser = user.FindUser(LoginTBox.Text, PasswordTBox.Password);
+            switch (user.GetUserRole(LoginTBox.Text, PasswordTBox.Password))
             {
                 case "Org":
                     NavigationService.Navigate(new AdminPage());
