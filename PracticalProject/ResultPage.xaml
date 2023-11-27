@@ -1,0 +1,40 @@
+﻿<Page x:Class="PracticalProject.ResultPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PracticalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ResultPage">
+
+    <Grid Loaded="Grid_Loaded" Background="BurlyWood">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="8"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ResCBox" Grid.Row="2" Grid.Column="7" Margin="6" HorizontalContentAlignment="Center"></ComboBox>
+        <DataGrid  x:Name="DGField" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" IsReadOnly="True"></DataGrid>
+        <Button Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="1" Margin="6" x:Name="RegBtn" Content="Оценить" Click="RegBtn_Click" ></Button>
+        <Button Grid.Column="7" Grid.Row="5" Grid.ColumnSpan="1" Margin="6" x:Name="LogInBtn" Content="Выйти" Click="LogInBtn_Click" ></Button>
+    </Grid>
+</Page>
