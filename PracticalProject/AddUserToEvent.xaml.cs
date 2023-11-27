@@ -28,10 +28,15 @@ namespace PracticalProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(DataG.SelectedItem != null && DataG.SelectedItem as UserToShow != null) { 
             UserToShow u = DataG.SelectedItem as UserToShow;
             User.EventToAdd.AddUserToEvent(User.GetUser(u.login));
-           
             NavigationService.GoBack();
+            }
+            else
+            {
+                MessageBox.Show("Выберите пользователя!");
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

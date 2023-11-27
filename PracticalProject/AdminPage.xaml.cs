@@ -38,7 +38,7 @@ namespace PracticalProject
         }
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-            if(DataG.SelectedItem != null) { 
+            if(DataG.SelectedItem != null && DataG.SelectedItem as EventToShow != null) { 
                 Event selectedEvent = Event.GetEventByName((DataG.SelectedItem as EventToShow).Название);
                 selectedEvent.RemoveEvent();
                 MessageBox.Show("Мероприятие удалено!");

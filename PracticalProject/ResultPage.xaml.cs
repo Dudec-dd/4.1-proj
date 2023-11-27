@@ -32,11 +32,16 @@ namespace PracticalProject
 
         private void RegBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (DGField.SelectedItem != null) {
-                UserToShow userToShow = DGField.SelectedValue as UserToShow;
+            UserToShow userToShow = DGField.SelectedValue as UserToShow;
+            if (DGField.SelectedItem != null && !User.GetUser(userToShow.login).UserScore.ContainsKey(User.EventToEdit.EventName)) {
+
                 User.GetUser(userToShow.login).UserScore.Add(User.EventToEdit.EventName,Int32.Parse(ResCBox.SelectedValue.ToString()));
             if (User.GetUser((DGField.SelectedValue as UserToShow).login).UserScore[User.EventToEdit.EventName] == Int32.Parse(ResCBox.SelectedValue.ToString()))
                 MessageBox.Show("Готово!");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка операции!");
             }
         }
 
