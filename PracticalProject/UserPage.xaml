@@ -33,9 +33,9 @@
             <ColumnDefinition Width="8"/>
 
         </Grid.ColumnDefinitions>
-        <DataGrid Name="DataG" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="6" SelectedIndex="-1"/>
-        
+        <DataGrid Name="DataG" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" SelectedIndex="-1"/>
 
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Content="Меню пользователя" FontFamily="Arial" FontSize="30" Foreground="#FF080707" ></Label>
         <Button Click = "AddButton_Click" Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="2" Content="Оценки"/>
         <Button  Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="2" Content="Мои данные" Click="Button_Click" ></Button>
         <Button x:Name="SaveBtn" Click = "DecreaseButton_Click" Grid.Column="7" Grid.Row="5" Grid.ColumnSpan="2" Content="Сохранить"></Button>

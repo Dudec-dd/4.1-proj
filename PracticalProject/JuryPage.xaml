@@ -33,7 +33,7 @@
             <ColumnDefinition Width="8"/>
 
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Content="Таблица жюри" FontFamily="Arial" FontSize="30" Foreground="#FFEC0E0E" ></Label>
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Content="Меню жюри" FontFamily="Arial" FontSize="30" Foreground="Black" ></Label>
         <DataGrid Name="DataG" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" IsReadOnly="True" />
         <Button Click = "AddButton_Click" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2" Content="Оцеить" Height="62" VerticalAlignment="Top"/>
         <Button Click = "BackButton_Click" Grid.Column="7" Grid.Row="6" Grid.ColumnSpan="2" Content="Назад"></Button>
