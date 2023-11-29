@@ -33,10 +33,11 @@
             <ColumnDefinition Width="8"/>
 
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Content="Таблица модератора" FontFamily="Arial" FontSize="30" Foreground="#FFEC0E0E" ></Label>
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Content="Меню модератора" FontFamily="Arial" FontSize="30" Foreground="Black" ></Label>
         <DataGrid Name="DataG" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" IsReadOnly="True"/>
-        <Button Click = "AddButton_Click" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2" Content="Добавить участника" Height="62" VerticalAlignment="Top"/>
-        <Button Click = "RemButton_Click" Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="2" Content="Стать модератором"></Button>
-        <Button Click = "BackButton_Click" Grid.Column="7" Grid.Row="6" Grid.ColumnSpan="2" Content="Выйти"></Button>
+        <Button Margin="10" Click = "AddButton_Click" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2" Content="Добавить участника"/>
+        <Button Margin="10" Click = "RemButton_Click" Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="2" Content="Стать модератором"></Button>
+        <Button Margin="10" Click = "Gotoprofile_Click" Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="2" Content="Перейти в профиль"/>
+        <Button Margin="10" Click = "BackButton_Click" Grid.Column="8" Grid.Row="6" Grid.ColumnSpan="1" Content="Назад"></Button>
     </Grid>
 </Page>

@@ -58,5 +58,10 @@ namespace PracticalProject
             }
             DataG.ItemsSource = Event.ShowEvents();
         }
+
+        private void Gotoprofile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new UserPage());
+        }
     }
 }

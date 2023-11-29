@@ -32,9 +32,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="8"/>
         </Grid.ColumnDefinitions>
-        <ComboBox x:Name="ResCBox" Grid.Row="2" Grid.Column="7" Margin="6" HorizontalContentAlignment="Center"></ComboBox>
+        <ComboBox FontSize="30" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" x:Name="ResCBox" Grid.Row="2" Grid.Column="7" Margin="10" ></ComboBox>
         <DataGrid  x:Name="DGField" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" IsReadOnly="True"></DataGrid>
-        <Button Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="1" Margin="6" x:Name="RegBtn" Content="Оценить" Click="RegBtn_Click" ></Button>
-        <Button Grid.Column="7" Grid.Row="5" Grid.ColumnSpan="1" Margin="6" x:Name="LogInBtn" Content="Выйти" Click="LogInBtn_Click" ></Button>
+        <Button Grid.Column="7" Grid.Row="4" Grid.ColumnSpan="2" Margin="10" x:Name="RegBtn" Content="Оценить" Click="RegBtn_Click" ></Button>
+        <Button Grid.Column="7" Grid.Row="5" Grid.ColumnSpan="2" Margin="10" x:Name="LogInBtn" Content="Выйти" Click="LogInBtn_Click" ></Button>
     </Grid>
 </Page>

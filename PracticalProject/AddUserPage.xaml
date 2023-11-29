@@ -39,7 +39,7 @@
         <ComboBox Name="roleCBox" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="4" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"></ComboBox>
         <TextBox LostFocus="LoginTBox_LostFocus" GotFocus="LoginTBox_GotFocus" Name="LoginTBox" MaxLength="45" TextAlignment="Center" Text="Введите логин" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="5" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"></TextBox>
         <TextBox LostFocus="PasswordTBox_LostFocus" GotFocus="PasswordTBox_GotFocus" Name="PasswordTBox" MaxLength="45" TextAlignment="Center" Text="Введите пароль" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="6" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"></TextBox>
-        <Button Grid.Column="7" Grid.Row="7" Content="Назад" FontSize="20" FontFamily="Arial" Click="Button_Click_1"></Button>
-        <Button Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="7" Content="Зарегистрироваться" FontSize="20" FontFamily="Arial" Click="Button_Click"></Button>
+        <Button Margin="10" Grid.Column="7" Grid.Row="7" Content="Назад" FontSize="20" FontFamily="Arial" Click="Button_Click_1"></Button>
+        <Button Margin="10" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="7" Content="Зарегистрироваться" FontSize="20" FontFamily="Arial" Click="Button_Click"></Button>
     </Grid>
 </Page>

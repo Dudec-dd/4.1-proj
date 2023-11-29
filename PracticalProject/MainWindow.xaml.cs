@@ -32,7 +32,7 @@ namespace PracticalProject
             User.users.Add(new User("Vanya", "igorev", dateTime, "User", "user", "User"));
             User.users.Add(new User("Lena", "igorev", dateTime, "Org", "org", "Org"));
 
-            new Event("A", "Games", User.users[0], User.users[3]);
+            new Event("MainEvent", "Games", User.users[0], User.users[3]);
             Event.Events[0].AddUserToEvent(User.users[2]);
             Event.Events[0].AddUserToEvent(User.users[3]);
 

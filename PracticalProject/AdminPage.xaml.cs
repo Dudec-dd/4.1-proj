@@ -81,6 +81,11 @@ namespace PracticalProject
                 i++;
             }
         }
+
+        private void GoProfile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new UserPage());
+        }
     }
 
 }
